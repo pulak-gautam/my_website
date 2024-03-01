@@ -1,0 +1,55 @@
+baseURL = 'https://home.iitk.ac.in/~pulakg21/'
+languageCode = 'en'
+# languageCode = 'zh-CN'
+theme = "JuiceBar"
+title = "Home"
+
+[params]
+author = "pulakg"
+description = "My site description"
+authorImage = "/~pulakg21/images/bocchi_guitar.jpg"
+paginate = 5
+
+Title = "Pulak's Blog"
+content = "I'm Pulak, nice to meet you(ˊ˘ˋ*)♡"
+imageUrl = "/~pulakg21/images/pfp.jpg"
+# To add a new social icon (More social icons can be found in JuiceBar\layouts\partials\svg.html.)
+[[params.social]]
+name = "Github"
+url = "https://github.com/pulak-gautam"
+[[params.social]]
+name = "email"
+url = "mailto:pulakg21@iitk.ac.in"
+
+[taxonomies]
+category = "categories"
+
+# To add a new navigation link
+[[menu.main]]
+name = "About"
+url = "/about"
+[[menu.main]]
+name = "Blog"
+url = "/post"
+[[menu.main]]
+name = "Categories"
+url = "/categories"
+
+[params.giscus]
+repo = "hotjuicew/blog"
+repoID = "R_kgDOHHQOuw"
+category = "Announcements"
+categoryID = "DIC_kwDOHHQOu84CWCQ3"
+mapping = "og:title"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lang = "en"
+loading = "lazy"
+
+# Used for outputting the documentation (required).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+
+
